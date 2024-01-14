@@ -23,6 +23,6 @@
     }
 
     .icon-size {
-        @apply w-[24px] h-[24px];
+        @apply !w-[24px] !h-[24px];
     }
 }
