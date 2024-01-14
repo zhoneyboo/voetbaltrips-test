@@ -1,26 +1,26 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+    import AppBanner from '@/components/AppBanner.vue';
+    import AppNavigationBar from '@/components/AppNavigationBar.vue';
+    import AppCard from '@/components/AppCard.vue';
 </script>
+<template>
+    <div class="main-wrapper">
+        <AppBanner />
+        <AppNavigationBar />
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+        <!-- Main content -->
+        <div class="container mx-auto">
+            <h1 class="text-[32px]">Neem contact op</h1>
+            <div class="flex">
+                <div class="flex-1">
+                    <AppCard>
+                        asd
+                    </AppCard>
+                </div>
+                <div class="flex-auto"></div>
+            </div>
+        </div>
+        
+        <!-- End main content -->
+    </div>
+</template>
