@@ -19,11 +19,11 @@
                 <div class=" flex lg:flex-row flex-col flex-nowrap gap-x-[64px] mb-[56px]">
                     <div class="flex-1">
                         <AppCard class="mb-8 lg:mb-0">
-                            <div class="flex flex-row gap-[15px] mb-4">
-                                <div class="w-1/2">
+                            <div class="flex flex-row flex-wrap lg:flex-nowrap gap-[15px] mb-4">
+                                <div class="w-full lg:w-1/2">
                                     <InputText label="Naam" placeholder="Naam"/>
                                 </div>
-                                <div class="w-1/2">
+                                <div class="w-full lg:w-1/2">
                                     <InputText label="Email" placeholder="Email"/>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@
                                     <InputTextarea label="Bericht" placeholder="Bericht"/>
                                 </div>
                             </div>
-                            <ButtonPrimary>
+                            <ButtonPrimary class="w-full lg:w-[unset]">
                                 Versturen
                                 <img src="@/assets/icons/arrow-right.png" class="ml-2 icon-size">
                             </ButtonPrimary>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="lg:max-w-[488px] lg:w-full">
                        <div class="flex flex-col lg:flex-row">
-                            <div class="flex flex-col gap-y-8 w-full lg:w-1/2">
+                            <div class="flex flex-col gap-y-6 lg:gap-y-8 w-full lg:w-1/2">
                                 <div>
                                     <InformationDetail :icon="require(`@/assets/contact-us/telephone.png`)" label="TELEFOON" content="030-3690059"/>
                                 </div>
@@ -58,7 +58,7 @@
                                     <InformationDetail :icon="require(`@/assets/contact-us/bag.png`)" label="KVK-NUMMER" content="030-3690059"/>
                                 </div>
                                 <div>
-                                    <InformationDetail :icon="require(`@/assets/contact-us/map.png`)" class="mb-8" label="ONS ADRES">
+                                    <InformationDetail :icon="require(`@/assets/contact-us/map.png`)" class="mb-6 lg:mb-8" label="ONS ADRES">
                                         <p class="mb-0">
                                             Bisonspoor 332, <br>
                                             3605JT, Maarssen
@@ -66,7 +66,7 @@
                                     </InformationDetail>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-y-8 w-full lg:w-1/2">
+                            <div class="flex flex-col gap-y-6 lg:gap-y-8 w-full lg:w-1/2">
                                 <div>
                                     <InformationDetail :icon="require(`@/assets/contact-us/email.png`)" label="E-Mail" content="info@voelbaltrips.com"/>
                                 </div>
