@@ -13,12 +13,12 @@
         <AppNavigationBar />
 
         <!-- Main content -->
-        <div class="px-[100px] py-[40px]">
+        <div class="px-[17px] lg:px-[100px] py-[40px]">
             <div class="container mx-auto">
                 <h1 class="text-[32px] mb-8 font-medium">Neem contact op</h1>
-                <div class="flex flex-row flex-nowrap gap-x-[64px] mb-[56px]">
+                <div class=" flex lg:flex-row flex-col flex-nowrap gap-x-[64px] mb-[56px]">
                     <div class="flex-1">
-                        <AppCard>
+                        <AppCard class="mb-8 lg:mb-0">
                             <div class="flex flex-row gap-[15px] mb-4">
                                 <div class="w-1/2">
                                     <InputText label="Naam" placeholder="Naam"/>
@@ -43,22 +43,22 @@
                             </ButtonPrimary>
                         </AppCard>
                     </div>
-                    <div class="w-[488px]">
-                       <div class="flex flex-row">
-                            <div class="flex flex-col gap-y-8 w-1/2">
+                    <div class="lg:max-w-[488px] lg:w-full">
+                       <div class="flex flex-col lg:flex-row">
+                            <div class="flex flex-col gap-y-8 w-full lg:w-1/2">
                                 <div>
-                                    <InformationDetail label="TELEFOON" content="030-3690059"/>
+                                    <InformationDetail :icon="require(`@/assets/contact-us/telephone.png`)" label="TELEFOON" content="030-3690059"/>
                                 </div>
                                 <div>
-                                    <InformationDetail label="INSTAGRAM">
+                                    <InformationDetail :icon="require(`@/assets/contact-us/instagram.png`)"  label="INSTAGRAM">
                                         <a href="#" class="mb-0 underline text-[#006FEB]">@voelbaltrips</a>
                                     </InformationDetail>
                                 </div>
                                 <div>
-                                    <InformationDetail label="KVK-NUMMER" content="030-3690059"/>
+                                    <InformationDetail :icon="require(`@/assets/contact-us/bag.png`)" label="KVK-NUMMER" content="030-3690059"/>
                                 </div>
                                 <div>
-                                    <InformationDetail label="ONS ADRES">
+                                    <InformationDetail :icon="require(`@/assets/contact-us/map.png`)" class="mb-8" label="ONS ADRES">
                                         <p class="mb-0">
                                             Bisonspoor 332, <br>
                                             3605JT, Maarssen
@@ -66,23 +66,24 @@
                                     </InformationDetail>
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-y-8 w-1/2">
+                            <div class="flex flex-col gap-y-8 w-full lg:w-1/2">
                                 <div>
-                                    <InformationDetail label="E-Mail" content="info@voelbaltrips.com"/>
+                                    <InformationDetail :icon="require(`@/assets/contact-us/email.png`)" label="E-Mail" content="info@voelbaltrips.com"/>
                                 </div>
                                 <div>
-                                    <InformationDetail label="INSTAGRAM">
+                                    <InformationDetail :icon="require(`@/assets/contact-us/facebook.png`)" label="FACEBOOK">
                                         <a href="#" class="mb-0 underline text-[#006FEB]">Voelbaltrips.com</a>
                                     </InformationDetail>
                                 </div>
                                 <div>
-                                    <InformationDetail label="BTW-NUMMER" content="NL859888216B01"/>
+                                    <InformationDetail :icon="require(`@/assets/contact-us/tax.png`)" label="BTW-NUMMER" content="NL859888216B01"/>
                                 </div>
                             </div>
                        </div>
                     </div>
                 </div>
-                <img src="@/assets/map-large.png" class="w-full" alt="">
+                <img src="@/assets/map-large.png" class="hidden lg:block w-full" alt="">
+                <img src="@/assets/map-small.png" class="block lg:hidden w-full" alt="">
             </div>
         </div>
         <!-- End main content -->

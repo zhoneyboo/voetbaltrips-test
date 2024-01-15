@@ -2,7 +2,7 @@
     import BlurBg from '@/assets/bg_blur.png';
 </script>
 <template>
-    <div :style="{ backgroundImage: `url(${BlurBg})`}" class="min-h-[325px] bg-cover bg-center bg-no-repeat flex flex-col justify-center px-[100px] white-text">
+    <div :style="{ backgroundImage: `url(${BlurBg})`}" class="min-h-[325px] bg-cover bg-center bg-no-repeat flex flex-col justify-center px-[17px] lg:px-[100px] white-text">
         <div class="container mx-auto">
             <div class="flex flex-row flex-nowrap gap-x-3 mb-6">
             <img src="@/assets/Home.png" alt="">

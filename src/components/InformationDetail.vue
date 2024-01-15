@@ -1,16 +1,16 @@
 <template>
-    <div class="w-full">
+    <div class="w-full flex flex-column justify-between lg:block">
         <div class="flex flex-row flex-nowrap items-center gap-x-4 mb-2">
             <div class="w-[32px] h-[32px] flex flex-row items-center justify-center">
-                <img src="@/assets/icons/dark-telephone.png">
+                <img :src="icon">
             </div>
             <div class="flex-grow">
                 <p class="mb-0 text-base font-medium leading-[18.96px] uppercase text-[#006FEB]">{{ label }}</p>
             </div>
         </div>
         <div class="flex flex-row flex-nowrap items-center gap-x-4">
-            <div class="w-[32px] flex flex-row"></div>
-            <div class="flex-grow text-[18px] leading-[21.33px]">
+            <div class="w-[32px] hidden lg:flex flex-row"></div>
+            <div class="flex-grow text-base leading-[18.96px] lg:text-[18px] lg:leading-[21.33px]">
                 <slot>
                     <p class="mb-0">
                         {{  content }}
@@ -31,6 +31,10 @@
         content: {
             type: String,
             default: null
+        },
+        icon: {
+            type: String,
+            default: null,
         }
     })
 </script>
